@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +19,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
       #imges > div > img {
-        @apply aspect-square;
+        aspect-ratio: 1/1;
       }
     </style>
   </head>
@@ -407,23 +407,6 @@
           });
         };
       }
-
-      const menu = document.querySelector("#menu_button");
-      const close = document.querySelector("#close_button");
-      const navbar = document.querySelector("#nav_bar");
-      const menus_box = document.querySelector("#menu_block");
-      menu.addEventListener("click", (e) => {
-        menu.classList.toggle("hidden");
-        close.classList.toggle("hidden");
-        navbar.classList.toggle("hidden");
-        menus_box.classList.toggle("hidden");
-      });
-      // close.addEventListener("click", (e) => {
-      //   menu.classList.toggle("hidden");
-      //   close.classList.toggle("hidden");
-      //   navbar.classList.toggle("hidden");
-      //   menus_box.classList.toggle("hidden");
-      // });
 
       const imageHandler = new ImageHandler();
       const priceHandler = new PriceHandler();
